@@ -34,7 +34,7 @@ export const User = sequelize.define('users', {
         defaultValue: Status.ACTIVE,
         validate:{
             isIn: {
-                args: [[Status.ACTIVE, Status.ACTIVE]],
+                args: [[Status.ACTIVE, Status.INACTIVE]],
                 msg: `el estado debe ser ${Status.ACTIVE} o ${Status.INACTIVE }`,
             },
         },
