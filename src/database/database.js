@@ -12,7 +12,7 @@ export const sequelize = new Sequelize(
         dialectOptions: {
             ssl: { 
                 require: true, //esto indica que ña conexion requiere SSL
-                rejecUnauthorized: false //esto evita errores de autorizacion de SSL
+                rejectUnauthorized: false //esto evita errores de autorizacion de SSL
             }
         }
     }
