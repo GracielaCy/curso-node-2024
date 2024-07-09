@@ -11,8 +11,8 @@ export const sequelize = new Sequelize(
         logging: console.log,
         dialectOptions: {
             ssl: { 
-                require: true, //esto indica que ña conexion requiere SSL
-                rejectUnauthorized: false //esto evita errores de autorizacion de SSL
+                require: true, 
+                rejectUnauthorized: false 
             }
         }
     }
